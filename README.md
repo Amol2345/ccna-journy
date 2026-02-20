@@ -65,3 +65,14 @@ Health endpoint:
 
 - Data is stored in browser LocalStorage, so each browser/device maintains its own progress.
 - No auth and no external database are required.
+
+## Continuous Integration (GitHub Actions)
+
+On every push and pull request, CI runs:
+
+- `npm install`
+- `npm run lint`
+- `npm run typecheck`
+- `npm run build`
+
+Workflow file: `.github/workflows/ci.yml`
